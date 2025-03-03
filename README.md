@@ -9,11 +9,7 @@
 
 # Materials
 •	Computer running Arduino IDE
-•	SparkFun Inventor’s kit: RedBoard, Photoresistor, an LED, 10 kΩ potentiometer, 
--Photoresistor
--An LED
--10 kΩ potentiometer
--Resistors: 10 kΩ, 330Ω
+•	SparkFun Inventor’s kit: RedBoard, Photoresistor, an LED, 10 kΩ potentiometer, 10 kΩ and 330Ω resistors
 
 # Assembly Procedures  
 
