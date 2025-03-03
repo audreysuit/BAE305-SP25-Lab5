@@ -7,7 +7,15 @@
 
 # Summary  
 
-# Materials  
+# Materials 
+•	Oscilloscope
+•	Computer running Arduino IDE
+•	SparkFun Inventor’s kit
+o	RedBoard
+o	Photoresistor
+o	An LED
+o	10 kΩ potentiometer
+o	Resistors: 10 kΩ, 330Ω
 
 # Assembly Procedures  
 
