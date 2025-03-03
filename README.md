@@ -1,8 +1,8 @@
 # BAE305-SP25-Lab5
 # Laboratory Report for Lab 5 of BAE305 Spring 2025
-# Lab 5 - For Good Measure: Basic Circuits
+# Lab 5 - The Brain: Microcontrollers 
 * By: Abby Phillips and Audrey Suit
-* Submitted: February 10th, 2025
+* Submitted: March 5, 2025
 
 
 ## Summary  
