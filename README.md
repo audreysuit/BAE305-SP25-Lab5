@@ -15,6 +15,7 @@
 
 Using the Fluke digital multimeter, we measured the actual resistance of the 10 kΩ and 330Ω resistors by attaching the multimeter probes to their terminals with alligator clips. The labeled resistance was verified using the resistor color code.
 
+To assemble the Arduino system, we peeled and stuck the breadboard to the devoted section of the Sparkfun base and screwed the Redboard to the other section of the Sparkfun base.
 # Test Equipment
 •	Oscilloscope
 •	Fluke Digital Multimeter
