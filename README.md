@@ -7,6 +7,8 @@
 
 # Summary  
 
+In this lab, we explored the fundamentals of microcontrollers by working with the Arduino platform and the RedBoard (Arduino UNO) to control various circuit components. Our primary objective was to familiarize ourselves with the Arduino IDE and the process of programming microcontrollers. We began by uploading a simple “Blink” program to turn an LED on and off, which confirmed that our hardware and code were working properly. Next, we advanced to reading analog inputs by connecting a potentiometer and using the Arduino’s analog-to-digital converter, allowing us to adjust the LED’s blinking rate. We then replaced the potentiometer with a photoresistor in combination with a fixed resistor to monitor light levels, using an if-else structure in our code to operate the LED as a night light. Finally, we implemented pulse width modulation (PWM) to control LED brightness by mapping analog sensor values to a 0–255 PWM range. Through these exercises, we reinforced our understanding of digital versus analog signals, the structure of Arduino programs (declarations, setup, and loop), and how PWM can simulate varying analog outputs. This lab provided a solid foundation in microcontroller programming and sensor interfacing, preparing us for more complex projects in the future.
+
 # Materials
 •	Computer running Arduino IDE
 •	SparkFun Inventor’s kit: RedBoard, Photoresistor, an LED, 10 kΩ potentiometer, 10 kΩ and 330Ω resistors
@@ -36,6 +38,21 @@ insert schematic
 
 insert circuit photo
 
+To ensure this system was working properly, we used the Serial Monitor tool to verify that the Baud rate was set at 9600 bps. This set us up to run tests described below in the Test Procedures.
+
+### Part 3 - Controlling an LED with a Photoresistor
+
+In this section of the lab, we kept the circuit from previous parts but replaced the potentiometer with a photoresistor in series with a 10 kΩ resistor. We connected the photoresistor to 5V, the resistor to ground, and ran a wire from A0 to the node between the photoresistor and 10 kΩ resistor. See Figures 3.1 and 3.2 below for the schematic and image of this circuit setup.
+
+insert schematic
+
+insert circuit photo
+
+### Part 4 - LED Dimmer using PWM
+
+For this part, we used the circuit from part 2 (reference Figures 2.1 and 2.2) changing the LED to one that is PWM capable. After configuring this setup, we connected the oscilloscope to the LED pin by connected the probe leads to the LED and the wire on the other side of the LED. This is shown in Figure 4.1 below.
+
+insert circuit photo
 
 # Test Equipment
 •	Oscilloscope
