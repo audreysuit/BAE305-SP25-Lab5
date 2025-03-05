@@ -194,6 +194,19 @@ analogWrite(ledPin, mappedValue);  //writes the mapped value to the LED pin
 
 # Discussion
 
+Discussion Question 1: Your LED flashes with a delay from the uploaded code. Decrease this delay (after both write instructions) until the LED just stops blinking--that is the light is still blinking but appears to stay constantly illuminated. What is the value of your delay? What field may this "persistance of vision" play a greater role in?
+
+The value of the delay to cause the LED to appear constantly illuminated whilst blinking was 12 ms. This plays a greater role in electronics and screens used for computers, televisions and smartphones. The persistence of vision phenomenon, where rapid blinking or changing images appear as continuous to the human eye, is crucial in electronics and display technology. These screens refresh images that we perceive as smooth and continuous rather than flashing individual images.
+
+Discussion Question 2a: What is the difference between an analog and a digital signal?
+
+An analog signal is produced continuously while digital produces a blinking signal that typically reads either 0 or 1.
+
+Discussion Question 2b: List a few examples of real-world examples that can be described by an analog signal. Likewise, what are the two states which can be conveyed by a digital signal?
+
+An example of a real world analog signal may be a light sensor. As we've seen, a device like a photoresistor or photodiode produces an analog signal that varies with changes in light intensity. Other examples are found in the medical field, like electrocardiograms (ECGs) and respiratory signals. ECGs record continuous electrical signals in the heart and brain. Respiratory signals record from airflow sensors to capture breathing patterns and volumes.
+
+Discussion Question 2c:
 
 # Conclusion
 
