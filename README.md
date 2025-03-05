@@ -45,52 +45,52 @@ insert circuit photo
 ## Part 1: Blinking an LED
 1. Assemble the Circuit by attaching the RedBoard and breadboard to the SparkFun base. Connect the RedBoard to the computer using a USB cable.
 2. Setup Arduino IDE
-  - Select Tools > Board > Arduino Uno.
-  - Select the correct COM port (Tools > Port > COM?).
+    - Select Tools > Board > Arduino Uno.
+    - Select the correct COM port (Tools > Port > COM?).
 3. Upload and Run the Blink Program
-  - Open the Blink program (File > Examples > Basics > Blink).
-  - Click Upload to transfer the program to the Arduino.
-  - Observe the LED blinking.
+    - Open the Blink program (File > Examples > Basics > Blink).
+    - Click Upload to transfer the program to the Arduino.
+    - Observe the LED blinking.
 4. Modify the Delay
-  - Reduce the delay time until the LED appears to stay constantly illuminated.
-  - Record the minimum delay at which the LED appears constant (12ms).
+    - Reduce the delay time until the LED appears to stay constantly illuminated.
+    - Record the minimum delay at which the LED appears constant (12ms).
 5. Consider: How does persistence of vision apply to this observation? Where is this phenomenon used in real-world applications (e.g., electronics, computer screens)?
 
 ## Part 2: Controlling an LED with a Potentiometer
 1. Load the Analog Read Serial Program
-  - Open File > Examples > Basics > AnalogReadSerial.
-  - Upload the program to the Arduino.
+    - Open File > Examples > Basics > AnalogReadSerial.
+    - Upload the program to the Arduino.
 2. Modify the Circuit
-  - Connect the potentiometer: 5V to one end, Ground (GND) to the other end, Middle (variable resistance) pin to A0.
-  - Verify operation using Tools > Serial Monitor (9600 bps).
+    - Connect the potentiometer: 5V to one end, Ground (GND) to the other end, Middle (variable resistance) pin to A0.
+    - Verify operation using Tools > Serial Monitor (9600 bps).
 3. Modify the Code
-  - Include LED control based on potentiometer input.
-  - Set blinking delay to match potentiometer readings.
+    - Include LED control based on potentiometer input.
+    - Set blinking delay to match potentiometer readings.
 4. Consider: Difference between analog and digital signals, Examples of real-world analog signals
 5. Observe serial monitor refresh rates as the potentiometer is adjusted.
 
 ## Part 3: Controlling an LED with a Photoresistor
 1. Modify the Circuit
-  - Replace potentiometer with a photoresistor.
-  - Connect photoresistor in series with a 10 kΩ resistor.
-  - 5V to photoresistor, Ground to resistor.
-  - A0 to the node between them.
+    - Replace potentiometer with a photoresistor.
+    - Connect photoresistor in series with a 10 kΩ resistor.
+    - 5V to photoresistor, Ground to resistor.
+    - A0 to the node between them.
 2. Test Light Sensitivity
-  - Observe minimum and maximum analog values:
+    - Observe minimum and maximum analog values:
 3. Modify Code for Light-Based LED Control
-  - Implement if-else statement to turn LED on when brightness is low:
+    - Implement if-else statement to turn LED on when brightness is low:
 4. Observe: How does the LED respond when light is blocked and unblocked?
 5. Consider: Why does the LED turn on/off immediately?
 
 ## Part 4: LED Dimmer Using PWM
 1. Modify the Circuit
-  - Use the potentiometer circuit from Part 2.
-  - Connect LED to a PWM-capable pin (e.g., Pin 6).
+    - Use the potentiometer circuit from Part 2.
+    - Connect LED to a PWM-capable pin (e.g., Pin 6).
 2. Modify the Code
-  - Map potentiometer voltage (0-1023) to PWM values (0-255):
+    - Map potentiometer voltage (0-1023) to PWM values (0-255):
 3. Oscilloscope Analysis
-  - Connect an oscilloscope to the LED pin.
-  - Observe changes in duty cycle and LED brightness as the potentiometer is adjusted.
+    - Connect an oscilloscope to the LED pin.
+    - Observe changes in duty cycle and LED brightness as the potentiometer is adjusted.
 4. Consider: Relationship between duty cycle and LED brightness. Explanation of PWM mapping and its effect on mean voltage.
 
 # Test Results
@@ -109,6 +109,7 @@ void loop() {
   delay(1000);                      // wait for a second
 }
 ```
+<p align="left"><em> Program 1: The above program turns the LED on and off in the loop function by making the voltage level high and low, respectively. This runs over and over again until the board is turned off or a new code is uploaded. It does this after initializing the digital pin LED_BUILTIN as an output in the setup function after resetting or powering the board. </em></p>
 
 ## Part 2: Controlling an LED with a Potentiometer
 ```ruby
@@ -140,6 +141,7 @@ void loop() {
   delay(sensorValue);    
 }
 ```
+<p align="left"><em> Program 2: The above program turns the LED on and off in the loop function by making the voltage level high and low, respectively. This runs over and over again until the board is turned off or a new code is uploaded. It does this after initializing the digital pin LED_BUILTIN as an output in the setup function after resetting or powering the board. </em></p>
 
 ## Part 3: Controlling an LED with a Photoresistor
 ```ruby
