@@ -198,6 +198,13 @@ analogWrite(ledPin, mappedValue);  //writes the mapped value to the LED pin
 ```
 <p align="left"><em> Program 4: The above program reads an analog input from pin A0 (the potentiometer) as demonstrated by program 2.1 and 2.2, and then maps the value to a PWM signal to control the brightness of the LED. The map function scales the sensor reading from 0-1023 (analog) to 0-255 (PWM).  </em></p>
 
+**Oscilloscope Images for Varying Potentiometer Values**
+| Decreased Value  | Increased Value|
+|--------------------|--------------------|
+|![image](https://github.com/user-attachments/assets/7f8d18f4-9c21-4adc-abc5-15c6a6e0c120) |![image](https://github.com/user-attachments/assets/fd4a78e3-c9e6-4da1-b699-292fe43f1235) |
+
+<p align="left"><em> Table 1: Oscilloscope images for low and high potentiometer sensor values are shown above. As demonstrated, when potentiometer value is increased, the duty cycle (shown by width of peaks) increases. When the potentiometer value decreases, the duty cycle decreases.  </em></p>
+
 # Discussion
 
 Discussion Question 1: Your LED flashes with a delay from the uploaded code. Decrease this delay (after both write instructions) until the LED just stops blinking--that is the light is still blinking but appears to stay constantly illuminated. What is the value of your delay? What field may this "persistance of vision" play a greater role in?
