@@ -52,7 +52,8 @@ In this section of the lab, we kept the circuit from previous parts but replaced
 
 For this part, we used the circuit from part 2 (reference Figures 2.1 and 2.2) changing the LED to one that is PWM capable. After configuring this setup, we connected the oscilloscope to the LED pin by connected the probe leads to the LED and the wire on the other side of the LED. This is shown in Figure 4.1 below.
 
-insert circuit photo
+![image](https://github.com/user-attachments/assets/cfa908f9-3670-4a1c-9a23-4c78654af062)
+
 
 # Test Equipment
 - Oscilloscope
