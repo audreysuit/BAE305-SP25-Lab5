@@ -238,3 +238,10 @@ As we increase the potentiometer, and therefore the sensor value, the LED appear
 
 # Conclusion
 
+This lab provided hands-on experience with microcontroller programming using the Arduino platform, allowing us to interface with and control various electronic components. Through a series of exercises, we explored fundamental concepts such as digital output, analog input, and pulse width modulation (PWM).
+
+We began by uploading and modifying a simple Blink program to control an LED, confirming our understanding of basic Arduino programming and circuit assembly. Next, we incorporated an analog input by using a potentiometer to adjust the LED’s blinking speed, reinforcing how the Arduino’s analog-to-digital converter (ADC) translates variable resistance into a usable signal. We then replaced the potentiometer with a photoresistor, creating a light-sensitive circuit that turned an LED on or off depending on ambient light levels. Finally, we implemented PWM to control LED brightness, mapping sensor values to a duty cycle range between 0 and 255.
+
+Through these exercises, we strengthened our understanding of digital and analog signals, microcontroller logic, and sensor interfacing. The use of the Serial Monitor allowed us to visualize real-time data, while the oscilloscope provided insights into PWM signal characteristics. The lab also highlighted the significance of persistence of vision in LED blinking and its applications in display technology.
+
+By successfully completing this lab, we built a strong foundation in Arduino programming, circuit assembly, and sensor integration, preparing us for more advanced projects involving microcontrollers and embedded systems.
