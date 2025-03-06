@@ -26,7 +26,8 @@ We assembled the circuit on our breadboard, consisting of a 330Ω resistor and 
 
 insert schematic 
 
-insert circuit photo
+![image](https://github.com/user-attachments/assets/d383f177-02c1-4c2d-84b9-7377477f4d0f)
+
 
 The blink program is used to test part 1, as detailed below in the Test Procedures section of this lab report. 
 
@@ -36,7 +37,7 @@ For this portion of the lab, we kept the circuit built in Part 1. We connected o
 
 insert schematic
 
-insert circuit photo
+![image](https://github.com/user-attachments/assets/fe79602c-a8e2-4798-8853-eb123834f1e3)
 
 To ensure this system was working properly, we used the Serial Monitor tool to verify that the Baud rate was set at 9600 bps. This set us up to run tests described below in the Test Procedures.
 
@@ -46,7 +47,8 @@ In this section of the lab, we kept the circuit from previous parts but replaced
 
 insert schematic
 
-insert circuit photo
+![Uploading image.jpeg…]()
+
 
 ### Part 4 - LED Dimmer using PWM
 
