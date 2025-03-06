@@ -47,7 +47,7 @@ In this section of the lab, we kept the circuit from previous parts but replaced
 
 insert schematic
 
-![Uploading image.jpeg…]()
+![image](https://github.com/user-attachments/assets/72ced225-27d5-48db-a8b8-7125b6285aa4)
 
 
 ### Part 4 - LED Dimmer using PWM
