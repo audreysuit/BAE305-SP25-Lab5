@@ -25,9 +25,10 @@ Next we downloaded the blink program following the menus (File>Examples>Basics>B
 We assembled the circuit on our breadboard, consisting of a 330Ω resistor and an LED in series to pin 13 in our RedBoard. This is shown in the Figures 1.1 and 1.2 below.
 
 ![image](https://github.com/user-attachments/assets/a29a13f5-d239-43a0-91f0-0b838ba82f14)
+<p align="left"><em>Figure 1.1: Schematic of Circuit 1. Source: Arduino Docs Built-In Example - "Blink". </em></p>
 
 ![image](https://github.com/user-attachments/assets/d383f177-02c1-4c2d-84b9-7377477f4d0f)
-
+<p align="left"><em>Figure 1.2: Image of Circuit 1 . </em></p>
 
 The blink program is used to test part 1, as detailed below in the Test Procedures section of this lab report. 
 
@@ -36,8 +37,10 @@ The blink program is used to test part 1, as detailed below in the Test Procedur
 For this portion of the lab, we kept the circuit built in Part 1. We connected our potentiometer to 5V and Ground, as well as connecting the variable resistance pin to A0. This setup can be viewed in Figures 2.1 and 2.2 below.
 
 ![image](https://github.com/user-attachments/assets/14944722-0307-400b-ac21-ec0bd6e2d894)
+<p align="left"><em>Figure 2.1: Schematic of Circuit 2. Source: Arduino Docs Built-In Example - "AnalogReadSerial". </em></p>
 
 ![image](https://github.com/user-attachments/assets/fe79602c-a8e2-4798-8853-eb123834f1e3)
+<p align="left"><em>Figure 2.2: Image of Circuit 2. </em></p>
 
 To ensure this system was working properly, we used the Serial Monitor tool to verify that the Baud rate was set at 9600 bps. This set us up to run tests described below in the Test Procedures.
 
@@ -46,14 +49,14 @@ To ensure this system was working properly, we used the Serial Monitor tool to v
 In this section of the lab, we kept the circuit from previous parts but replaced the potentiometer with a photoresistor in series with a 10 kΩ resistor. We connected the photoresistor to 5V, the resistor to ground, and ran a wire from A0 to the node between the photoresistor and 10 kΩ resistor. See Figure 3.1 below for the image of this circuit setup.
 
 ![image](https://github.com/user-attachments/assets/72ced225-27d5-48db-a8b8-7125b6285aa4)
-
+<p align="left"><em>Figure 3.1: Image of Circuit 3. </em></p>
 
 ### Part 4 - LED Dimmer using PWM
 
 For this part, we used the circuit from part 2 (reference Figures 2.1 and 2.2) changing the LED to one that is PWM capable. After configuring this setup, we connected the oscilloscope to the LED pin by connected the probe leads to the LED and the wire on the other side of the LED. This is shown in Figure 4.1 below.
 
 ![image](https://github.com/user-attachments/assets/cfa908f9-3670-4a1c-9a23-4c78654af062)
-
+<p align="left"><em>Figure 4.1: Image of Circuit 4 and Oscilloscope Testing Setup . </em></p>
 
 # Test Equipment
 - Oscilloscope
