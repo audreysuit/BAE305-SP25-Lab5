@@ -21,8 +21,8 @@ Using the Fluke digital multimeter, we measured the actual resistance of the 10 
 
 To assemble the Arduino system, we peeled and stuck the breadboard to the devoted section of the Sparkfun base and screwed the Redboard to the other section of the Sparkfun base.
 After starting Arduino IDE on the computer, we selected our Arduino Uno following the menu (Tools>Board>Arduino Uno) and connected the corresponding COM port through (Tools>Port>COM1).
-Next we downloaded the blink program following the menus (File>Examples>Basics>Blink) and downloaded it to the Arduino.
-We assembled the circuit on our breadboard, consisting of a 330Ω resistor and an LED in series to pin 13 in our RedBoard. This is shown in the Figures 1.1 and 1.2 below.
+Next, we downloaded the blink program following the menus (File>Examples>Basics>Blink) and downloaded it to the Arduino.
+We assembled the circuit on our breadboard, consisting of a 330Ω resistor and an LED in series to pin 13 in our RedBoard. This is shown in Figures 1.1 and 1.2 below.
 
 ![image](https://github.com/user-attachments/assets/a29a13f5-d239-43a0-91f0-0b838ba82f14)
 <p align="left"><em>Figure 1.1: Schematic of Circuit 1. Source: Arduino Docs Built-In Example - "Blink". </em></p>
@@ -46,17 +46,17 @@ To ensure this system was working properly, we used the Serial Monitor tool to v
 
 ### Part 3 - Controlling an LED with a Photoresistor
 
-In this section of the lab, we kept the circuit from previous parts but replaced the potentiometer with a photoresistor in series with a 10 kΩ resistor. We connected the photoresistor to 5V, the resistor to ground, and ran a wire from A0 to the node between the photoresistor and 10 kΩ resistor. See Figure 3.1 below for the image of this circuit setup.
+In this section of the lab, we kept the circuit from previous parts but replaced the potentiometer with a photoresistor in series with a 10 kΩ resistor. We connected the photoresistor to 5V and the resistor to ground and ran a wire from A0 to the node between the photoresistor and 10 kΩ resistor. See Figure 3.1 below for the image of this circuit setup.
 
 ![image](https://github.com/user-attachments/assets/72ced225-27d5-48db-a8b8-7125b6285aa4)
 <p align="left"><em>Figure 3.1: Image of Circuit 3. </em></p>
 
 ### Part 4 - LED Dimmer using PWM
 
-For this part, we used the circuit from part 2 (reference Figures 2.1 and 2.2) changing the LED to one that is PWM capable. After configuring this setup, we connected the oscilloscope to the LED pin by connected the probe leads to the LED and the wire on the other side of the LED. This is shown in Figure 4.1 below.
+For this part, we used the circuit from part 2 (reference Figures 2.1 and 2.2), changing the LED to one that is PWM capable. After configuring this setup, we connected the oscilloscope to the LED pin by connecting the probe leads to the LED and the wire on the other side of the LED. This is shown in Figure 4.1 below.
 
 ![image](https://github.com/user-attachments/assets/cfa908f9-3670-4a1c-9a23-4c78654af062)
-<p align="left"><em>Figure 4.1: Image of Circuit 4 and Oscilloscope Testing Setup . </em></p>
+<p align="left"><em>Figure 4.1: Image of Circuit 4 and Oscilloscope Testing Setup. </em></p>
 
 # Test Equipment
 - Oscilloscope
@@ -70,7 +70,7 @@ For this part, we used the circuit from part 2 (reference Figures 2.1 and 2.2) c
     - Select the correct COM port (Tools > Port > COM?). In our case, we connected to COM3. 
 3. Upload and Run the Blink Program
     - Open the Blink program (File > Examples > Basics > Blink).
-    - Click Upload to transfer the program to the Arduino. The code will automatically verify when uploaded so no need to do it separately.
+    - Click Upload to transfer the program to the Arduino. The code will automatically verify when uploaded, so no need to do it separately.
     - Create Circuit 1 on the RedBoard and connect power via your computer. The LED should flash.
 4. Modify the Delay
     - Reduce the delay time by decreasing the value in delay() function until the LED appears to stay constantly illuminated.
@@ -87,7 +87,7 @@ For this part, we used the circuit from part 2 (reference Figures 2.1 and 2.2) c
 3. Modify the Code
     - Include LED control based on potentiometer input.
     - Set blinking delay to match potentiometer readings.
-    - Confirm code is working by adjusting the potentiometer
+    - Confirm that the code is working by adjusting the potentiometer
 4. Consider: Difference between analog and digital signals, Examples of real-world analog signals
 5. Observe serial monitor refresh rates as the potentiometer is adjusted.
 
@@ -213,19 +213,19 @@ analogWrite(ledPin, mappedValue);  //writes the mapped value to the LED pin
 
 Discussion Question 1: Your LED flashes with a delay from the uploaded code. Decrease this delay (after both write instructions) until the LED just stops blinking--that is the light is still blinking but appears to stay constantly illuminated. What is the value of your delay? What field may this "persistance of vision" play a greater role in?
 
-The value of the delay to cause the LED to appear constantly illuminated whilst blinking was 12 ms. This plays a greater role in electronics and screens used for computers, televisions and smartphones. The persistence of vision phenomenon, where rapid blinking or changing images appear as continuous to the human eye, is crucial in electronics and display technology. These screens refresh images that we perceive as smooth and continuous rather than flashing individual images.
+The value of the delay to cause the LED to appear constantly illuminated whilst blinking was 12 ms. This plays a greater role in electronics and screens used for computers, televisions, and smartphones. The persistence of vision phenomenon, where rapid blinking or changing images appear as continuous to the human eye, is crucial in electronics and display technology. These screens refresh images that we perceive as smooth and continuous rather than flashing individual images.
 
 Discussion Question 2a: What is the difference between an analog and a digital signal?
 
 An analog signal is produced continuously while digital produces a blinking signal that typically reads either 0 or 1.
 
-Discussion Question 2b: List a few examples of real-world examples that can be described by an analog signal. Likewise, what are the two states which can be conveyed by a digital signal?
+Discussion Question 2b: List a few examples of real-world examples that can be described by an analog signal. Likewise, what are the two states that can be conveyed by a digital signal?
 
-An example of a real world analog signal may be a light sensor. As we've seen, a device like a photoresistor or photodiode produces an analog signal that varies with changes in light intensity. Other examples are found in the medical field, like electrocardiograms (ECGs) and respiratory signals. ECGs record continuous electrical signals in the heart and brain. Respiratory signals record from airflow sensors to capture breathing patterns and volumes.
+An example of a real-world analog signal may be a light sensor. As we've seen, a device like a photoresistor or photodiode produces an analog signal that varies with changes in light intensity. Other examples are found in the medical field, like electrocardiograms (ECGs) and respiratory signals. ECGs record continuous electrical signals in the heart and brain. Respiratory signals are recorded from airflow sensors to capture breathing patterns and volumes.
 
 Discussion Question 2c: What happens to the Serial Monitor Refresh rate as you move the potentiometer to control the LED blinking time? 
 
-The refresh rate decreases as you increase the potentiometer value, because it communicates a higher signal directly to the delay function. This lows down the blinking of the LED since it increases the values of the serial monitor. This is because the delay is directly tied to the sensor value. When we decrease the sensor value, it decreases the delay, and increases refresh rate.
+The refresh rate decreases as you increase the potentiometer value because it communicates a higher signal directly to the delay function. This lowers down the blinking of the LED since it increases the values of the serial monitor. This is because the delay is directly tied to the sensor value. When we decrease the sensor value, it decreases the delay and increases the refresh rate.
 
 Discussion Question 3: Does the LED turn on immediately after blocking the light? What about when you remove the object blocking the light, does the LED turn off immediately? Why? 
 
@@ -233,7 +233,7 @@ Yes, the light turns on and off immediately. The code is constantly running the 
 
 Discussion Question 4: Connect the oscilloscope to the LED pin and observe and record what happens to the signal and the LED brightness when you turn the knob of the potentiometer.
 
-As we increase the potentiometer, and therefore the sensor value, the LED appears brighter, and the PWM duty cycle increases since the LED stays on for a longer portion of each cycle. This is shown by an increase in width of the pulses on the oscilloscope since the duty cycle has increased. The mean voltage rises because the LED is on more frequently, hence, the increased brightness. The opposite is true when we decrease the potentiometer value, decreasing the brightness and duty cycle. This means the LED is on for a shorter period of time demonstrating a narrow pulse on the oscilloscope, decreasing the mean voltage since the LED is on for less time. PWM controls the average voltage supplied to an LED.
+As we increase the potentiometer, and therefore the sensor value, the LED appears brighter, and the PWM duty cycle increases since the LED stays on for a longer portion of each cycle. This is shown by an increase in the width of the pulses on the oscilloscope since the duty cycle has increased. The mean voltage rises because the LED is on more frequently, hence the increased brightness. The opposite is true when we decrease the potentiometer value, decreasing the brightness and duty cycle. This means the LED is on for a shorter period of time, demonstrating a narrow pulse on the oscilloscope, decreasing the mean voltage since the LED is on for less time. PWM controls the average voltage supplied to an LED.
 
 
 # Conclusion
