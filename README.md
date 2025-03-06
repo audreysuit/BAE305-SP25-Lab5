@@ -24,7 +24,7 @@ After starting Arduino IDE on the computer, we selected our Arduino Uno followin
 Next we downloaded the blink program following the menus (File>Examples>Basics>Blink) and downloaded it to the Arduino.
 We assembled the circuit on our breadboard, consisting of a 330Ω resistor and an LED in series to pin 13 in our RedBoard. This is shown in the Figures 1.1 and 1.2 below.
 
-insert schematic 
+![image](https://github.com/user-attachments/assets/a29a13f5-d239-43a0-91f0-0b838ba82f14)
 
 ![image](https://github.com/user-attachments/assets/d383f177-02c1-4c2d-84b9-7377477f4d0f)
 
@@ -35,7 +35,7 @@ The blink program is used to test part 1, as detailed below in the Test Procedur
 
 For this portion of the lab, we kept the circuit built in Part 1. We connected our potentiometer to 5V and Ground, as well as connecting the variable resistance pin to A0. This setup can be viewed in Figures 2.1 and 2.2 below.
 
-insert schematic
+![image](https://github.com/user-attachments/assets/14944722-0307-400b-ac21-ec0bd6e2d894)
 
 ![image](https://github.com/user-attachments/assets/fe79602c-a8e2-4798-8853-eb123834f1e3)
 
@@ -43,9 +43,7 @@ To ensure this system was working properly, we used the Serial Monitor tool to v
 
 ### Part 3 - Controlling an LED with a Photoresistor
 
-In this section of the lab, we kept the circuit from previous parts but replaced the potentiometer with a photoresistor in series with a 10 kΩ resistor. We connected the photoresistor to 5V, the resistor to ground, and ran a wire from A0 to the node between the photoresistor and 10 kΩ resistor. See Figures 3.1 and 3.2 below for the schematic and image of this circuit setup.
-
-insert schematic
+In this section of the lab, we kept the circuit from previous parts but replaced the potentiometer with a photoresistor in series with a 10 kΩ resistor. We connected the photoresistor to 5V, the resistor to ground, and ran a wire from A0 to the node between the photoresistor and 10 kΩ resistor. See Figure 3.1 below for the image of this circuit setup.
 
 ![image](https://github.com/user-attachments/assets/72ced225-27d5-48db-a8b8-7125b6285aa4)
 
